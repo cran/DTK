@@ -3,7 +3,7 @@
 \alias{DTK}
 \docType{package}
 \title{
-Dunnett-Tukey-Kramer: Pairwise Multiple Comparison Test Adjusted for Unequal Variances and Unequal Sample Sizes
+Dunnett-Tukey-Kramer Pairwise Multiple Comparison Test Adjusted for Unequal Variances and Unequal Sample Sizes
 }
 \description{
 Functions for conducting and plotting Dunnett's (1980) modified Tukey-Kramer pairwise multiple comparison test accounting for unequal variance and unequal sample sizes.}
@@ -11,7 +11,7 @@ Functions for conducting and plotting Dunnett's (1980) modified Tukey-Kramer pai
 \tabular{ll}{
 Package: \tab DTK\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
+Version: \tab 2.0\cr
 Date: \tab 2009-02-25\cr
 License: \tab GPL version 2 or newer\cr
 LazyLoad: \tab yes\cr
