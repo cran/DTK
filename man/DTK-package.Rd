@@ -11,8 +11,8 @@ Functions for conducting and plotting Dunnett's (1980) modified Tukey-Kramer pai
 \tabular{ll}{
 Package: \tab DTK\cr
 Type: \tab Package\cr
-Version: \tab 2.0\cr
-Date: \tab 2009-02-25\cr
+Version: \tab 2.1\cr
+Date: \tab 2009-03-05\cr
 License: \tab GPL version 2 or newer\cr
 LazyLoad: \tab yes\cr
 }
