@@ -23,7 +23,7 @@ Input data as vectors.
 }
 \references{Dunnett,C.W. (1980) Pairwise Multiple Comparisons in the Unequal Variance Case. Journal of the American Statistical Association. 75 (372): 796-800.}
 \author{Matthew K. Lau, Department of Biological Sciences, Northern Arizona University, AZ}
-\note{In the case of equal sample sizes and equal population variances, Dunnett's test produces slightly wider (i.e. more conservative) confidence intervals than the Tukey-Kramer procedure. This is because of differences in the degrees of freedom used for determining the Studentized Range values. In cases where variances are unequal, however, the Tukey-Kramer test, which uses the pooled variance, will spread variance across levels and produce misleading results.
+\note{In the case of equal sample sizes and equal population variances, Dunnett's test (the T3 Procedure) produces slightly wider (i.e. more conservative) confidence intervals than the Tukey-Kramer procedure. This is because of differences in the degrees of freedom used for determining the Studentized Range values. In cases where variances are unequal, however, the Tukey-Kramer test, which uses the pooled variance, will spread variance across levels and produce misleading results.
 }
 \seealso{\code{\link{DTK.plot}}, \code{\link{gl.unequal}}, \code{\link{TK.test}}, \code{\link{TukeyHSD}}, \code{\link{qtukey}}}
 \examples{

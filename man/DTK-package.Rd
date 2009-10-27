@@ -11,12 +11,12 @@ Functions for conducting and plotting Dunnett's (1980) modified Tukey-Kramer pai
 \tabular{ll}{
 Package: \tab DTK\cr
 Type: \tab Package\cr
-Version: \tab 2.1\cr
-Date: \tab 2009-03-05\cr
+Version: \tab 3.0\cr
+Date: \tab 2009-10-27\cr
 License: \tab GPL version 2 or newer\cr
 LazyLoad: \tab yes\cr
 }
-This package was created to analyze multi-level one-way experimental designs. It is designed to handle vectorized observation and factor data where there are unequal sample sizes and population variance homogeneity can not be assumed. To conduct the Dunnett modified Tukey-Kramer test, create two vectors: one for your observations and one for the factor level of each observation. The function, \code{\link{gl.unequal}}, provides a means to more conveniently produce a factor vector with unequal sample sizes. Next, use the \code{\link{DTK.test}} function to conduct the test and save the output as an object to input into the \code{\link{DTK.plot}} function, which produces a confidence interval plot for each of the pairwise comparisons. Lastly, the function (\code{\link{TK.test}}) conducts the original Tukey-Kramer test.
+This package was created to analyze multi-level one-way experimental designs. It is designed to handle vectorized observation and factor data where there are unequal sample sizes and population variance homogeneity can not be assumed. To conduct the Dunnett modified Tukey-Kramer test (a.k.a. the T3 Procedure), create two vectors: one for your observations and one for the factor level of each observation. The function, \code{\link{gl.unequal}}, provides a means to more conveniently produce a factor vector with unequal sample sizes. Next, use the \code{\link{DTK.test}} function to conduct the test and save the output as an object to input into the \code{\link{DTK.plot}} function, which produces a confidence interval plot for each of the pairwise comparisons. Lastly, the function (\code{\link{TK.test}}) conducts the original Tukey-Kramer test.
 }
 \author{
 Matthew K. Lau, Department of Biological Sciences, Northern Arizona University, AZ
