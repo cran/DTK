@@ -11,8 +11,8 @@ Functions for conducting and plotting Dunnett's (1980) modified Tukey-Kramer pai
 \tabular{ll}{
 Package: \tab DTK\cr
 Type: \tab Package\cr
-Version: \tab 3.0\cr
-Date: \tab 2009-10-27\cr
+Version: \tab 3.1\cr
+Date: \tab 2011-03-17\cr
 License: \tab GPL version 2 or newer\cr
 LazyLoad: \tab yes\cr
 }
@@ -23,7 +23,10 @@ Matthew K. Lau, Department of Biological Sciences, Northern Arizona University, 
 
 Maintainer: Matthew K. Lau <mkl48@nau.edu>
 }
-\note{I would like to acknowledge the invaluable help of Professor Brent Burch in the Department of Mathematics and Statistics at Northern Arizona University.}
+\note{I would like to acknowledge the invaluable help of Professor Brent
+  Burch in the Department of Mathematics and Statistics at Northern
+  Arizona University and suggestions by multiple R- users: including
+  M. Nunez, B. Roustan and S. Marshall.}
 
 \references{
 

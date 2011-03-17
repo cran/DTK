@@ -3,7 +3,7 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{ Dunnett's Modified Tukey-Kramer Pairwise Multiple Comparison Test}
 \description{
-Conducts a pairwise multiple comparison test for mean differences with unequal sample sizes and no assumption of equal population variances. 
+Conducts a pairwise multiple comparison test (using the C procedure) for mean differences with unequal sample sizes and no assumption of equal population variances. 
 }
 \usage{
 DTK.test(x = "data vector", f = "factor vector", a = "alpha level")
@@ -27,8 +27,8 @@ Input data as vectors.
 }
 \seealso{\code{\link{DTK.plot}}, \code{\link{gl.unequal}}, \code{\link{TK.test}}, \code{\link{TukeyHSD}}, \code{\link{qtukey}}}
 \examples{
-x=runif(54,0,100)
-f<-gl.unequal(n=5,k=c(10,9,10,15,10))
+x=c(rnorm(25,5,2),rnorm(30,5,5),rnorm(35,15,5))
+f<-gl.unequal(n=3,k=c(25,30,35))
 DTK.result<-DTK.test(x=x,f=f,a=0.05)
 DTK.result
 DTK.plot(DTK.result)

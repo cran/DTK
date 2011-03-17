@@ -13,17 +13,20 @@ DTK.plot(x = "DTK.test output")
   \item{x}{DTK.test output list object.}
 }
 \details{
-SEE EXAMPLE.
+Produces a formatted plot of all confidence intervals of pairwise
+comparisons of means. The itervals are plotted in red (=significant) and
+black (=non-significant) with grey dashed lines to help distinguish the comparisons. 
 }
+
 \value{
-Produces a formatted plot of all confidence intervals of pairwise comparisons of means.
+SEE EXAMPLE.
 }
 
 \author{Matthew K. Lau, Department of Biological Sciences, Northern Arizona University, AZ}
 \seealso{\code{\link{DTK.test}}, \code{\link{TK.test}}, \code{\link{TukeyHSD}}, \code{\link{qtukey}}}
 \examples{
-x=runif(54,0,100)
-f<-gl.unequal(n=5,k=c(10,9,10,15,10))
+x=c(rnorm(25,5,2),rnorm(30,5,5),rnorm(35,15,5))
+f<-gl.unequal(n=3,k=c(25,30,35))
 DTK.result<-DTK.test(x=x,f=f,a=0.05)
 DTK.result
 DTK.plot(DTK.result)

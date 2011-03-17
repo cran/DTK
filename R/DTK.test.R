@@ -1,4 +1,5 @@
-`DTK.test` <- function (x = "data vector", f = "factor vector", a = "alpha level") 
+DTK.test <-
+function (x = "data vector", f = "factor vector", a = "alpha level") 
 {
     if (a == "alpha level") {
         a = 0.05

@@ -21,10 +21,11 @@ TK.test(x = "data vector", f = "factor vector", a = "alpha level")
 \author{Matthew K. Lau, Department of Biological Sciences, Northern Arizona University, AZ}
 \seealso{\code{\link{DTK.test}}, \code{\link{DTK.plot}}, \code{\link{TukeyHSD}}, \code{\link{qtukey}}}
 \examples{
-x=runif(54,0,100)
-f<-gl.unequal(n=5,k=c(10,9,10,15,10))
+x=c(rnorm(25,5,2),rnorm(30,5,5),rnorm(35,15,5))
+f<-gl.unequal(n=3,k=c(25,30,35))
 DTK.result<-DTK.test(x=x,f=f,a=0.05)
+TK.result<-TK.test(x=x,f=f,a=0.05)
 DTK.result
-DTK.plot(DTK.result)
+TK.result
 }
 

@@ -1,0 +1,11 @@
+a8a55bf2898749f45ca1c53cde2db946 *DESCRIPTION
+9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
+787e4ee0d4bf06367c1b85b3440921cd *R/DTK.plot.R
+0ff6125a2f7a75fefad7b286f71a2d96 *R/DTK.test.R
+ce59382c89c797a1d677eeebe2ff6ea0 *R/TK.test.R
+fd644dcd57a2d4c08179945587e558d7 *R/gl.unequal.R
+d20cfa9ca07f455f421db0a93bf94c09 *man/DTK-package.Rd
+d8dfd9d638890f8300d8ab3ac05a2f59 *man/DTK.plot.Rd
+097130d3bcf892c357b3326dd5ca57ef *man/DTK.test.Rd
+3f0b0f480ff7b456e052690ac339a00e *man/TK.test.Rd
+f732faa6286b5e990cccb3d34e5f12fe *man/gl.unequal.Rd
