@@ -1,5 +1,8 @@
-DTK.test <-
-function (x = "data vector", f = "factor vector", a = "alpha level") 
+###DTK.test
+###Function for performing the C procedure described in Dunnett's 1980 paper
+###Updated 1 Jul 2013
+
+DTK.test <- function (x = "data vector", f = "factor vector", a = "alpha level") 
 {
     if (a == "alpha level") {
         a = 0.05
@@ -24,12 +27,17 @@ function (x = "data vector", f = "factor vector", a = "alpha level")
         }
         df[i] = n[i] - 1
     }
-    for (i in 1:nlevels(f)) {
-        if (i == 1) {
-            s = numeric(length = nlevels(f))
-        }
-        s[i] = sd(x[f == i])
-    }
+
+                                        #EDIT: 1Jul2013
+                                        #simplify using tapply
+    s <- tapply(x,f,sd)
+                                        #     for (i in 1:nlevels(f)) {
+                                        #         if (i == 1) {
+                                        #             s = numeric(length = nlevels(f))
+                                        #         }
+                                        #         s[i] = sd(x[f == i])
+                                        #     }
+
     SR = qtukey(p = a, nmeans = k, df = df, lower.tail = FALSE)
     vstar = (s^2)/n
     SRstar = array(NA, c(nlevels(f), nlevels(f)))
@@ -39,12 +47,18 @@ function (x = "data vector", f = "factor vector", a = "alpha level")
                 vstar[j])
         }
     }
+                                        #EDIT: 1July2013
+                                        #NOTE: Make loop mathematically consistent
     A = SRstar/sqrt(2)
     A = A[lower.tri(A) == TRUE]
     CI = array(NA, c(nlevels(f), nlevels(f)))
     for (i in 1:nrow(SRstar)) {
         for (j in 1:ncol(SRstar)) {
-            CI[i, j] = A[i] * (sqrt(vstar[i] + vstar[j]))
+          if (i<j){
+            CI[i, j] = A[i] * (sqrt(vstar[i] + vstar[j])) 
+          }else{
+            CI[i, j] = A[j] * (sqrt(vstar[i] + vstar[j])) #added 1 Jul 2013 MKL
+          }
         }
     }
     CI = CI[lower.tri(CI) == TRUE]

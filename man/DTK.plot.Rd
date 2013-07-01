@@ -3,7 +3,7 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{DTK Test Confidence Interval Plot}
 \description{
-Produces a plot of the confidence intervals produced by the function \code{\link{DTK.test}}.
+Produces a plot of the confidence intervals produced by the function DTK.test.
 }
 \usage{
 DTK.plot(x = "DTK.test output")

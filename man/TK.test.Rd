@@ -12,11 +12,10 @@ TK.test(x = "data vector", f = "factor vector", a = "alpha level")
 \arguments{
   \item{x}{Data vector}
   \item{f}{Factor vector}
-  \item{a}{Alpha, significance level. DEFAULT=0.05)}
+  \item{a}{Alpha, significance level. DEFAULT=0.05}
 }
-\value{TukeyHSD list output.
 
-}
+\value{TukeyHSD list output.}
 
 \author{Matthew K. Lau, Department of Biological Sciences, Northern Arizona University, AZ}
 \seealso{\code{\link{DTK.test}}, \code{\link{DTK.plot}}, \code{\link{TukeyHSD}}, \code{\link{qtukey}}}

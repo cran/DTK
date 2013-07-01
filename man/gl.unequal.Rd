@@ -13,13 +13,12 @@ gl.unequal(n = "number of levels", k = "numeric vector of sample sizes")
   \item{n}{Scalar determining the number of levels.}
   \item{k}{Numeric vector specifying the sample size at each level.}
 }
-\value{
-Produces a factored vector.}
+\value{Produces a factored vector.}
 
 \author{Matthew K. Lau, Department of Biological Sciences, Northern Arizona University, AZ}
 \note{Be sure that you precisely specify the above arguments to correspond to your observation vector.
 }
-\seealso{  \code{\link{gl}}, \code{\link{rep}} }
+\seealso{\code{\link{gl}}, \code{\link{rep}}}
 \examples{
 gl.unequal(n=3,k=c(25,30,35))
 }
